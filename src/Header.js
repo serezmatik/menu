@@ -9,7 +9,7 @@ const Header = () => {
           <span className="logo">STONEHENGE</span>
         </a>
       </div>
-      <a href="https://serezmatik.github.io/menu/">
+      <a href="https://serezmatik.github.io/menuPL/">
         <button className="language-btn">PL</button>
       </a>
     </header>
