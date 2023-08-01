@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Menu from "./Menu";
 import Categories from "./Categories";
 import items from "./data";
+import Header from "./Header";
 
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
 
@@ -22,10 +23,7 @@ const App = () => {
   return (
     <main>
       <section className="menu section">
-        <div className="title">
-          <h2>MENU STONEHENGE</h2>
-          <div className="underline"></div>
-        </div>
+        <Header />
         <Categories
           categories={categories}
           activeCategory={activeCategory}

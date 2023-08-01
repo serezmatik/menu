@@ -12,6 +12,7 @@
 }
 
 body {
+  text-decoration: none;
   margin: 0;
   font-family: var(--font-primary);
   -webkit-font-smoothing: antialiased;
@@ -25,6 +26,7 @@ code {
 }
 
 h1, h2, h3, h4 {
+  text-decoration: none;
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
@@ -43,6 +45,10 @@ p {
   color: var(--color-primary);
 }
 
+a{
+  text-decoration: none;
+}
+
 .section {
   width: var(--section-width);
   max-width: var(--section-max-width);
@@ -56,7 +62,7 @@ p {
 }
 
 .menu {
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 
 .title {
@@ -73,12 +79,12 @@ p {
   gap: 10px;
   padding: 15px;
   white-space: nowrap;
+  /* Add scrollbar */
+  scrollbar-width: thin;
 }
 
-/* Add scrollbar */
 .btn-container::-webkit-scrollbar {
   height: 8px;
-  background-color: var(--color-secondary);
 }
 
 .btn-container::-webkit-scrollbar-thumb {
@@ -130,8 +136,6 @@ p {
   padding: 1.5rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  animation-duration: 0.5s;
-  animation-fill-mode: both;
 }
 
 .menu-item:hover {
@@ -146,23 +150,18 @@ p {
   display: flex;
   justify-content: space-between;
   border-bottom: 0.5px solid var(--color-accent);
-  animation-duration: 0.5s;
-  animation-fill-mode: both;
 }
 
 .item-info h4 {
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
   color: var(--color-primary);
-  animation-duration: 0.5s;
-  animation-fill-mode: both;
 }
 
 .price {
   color: var(--color-primary);
   font-weight: bold;
-  animation-duration: 0.5s;
-  animation-fill-mode: both;
+  white-space: nowrap; /* Zapobiega łamaniu wierszy */
 }
 
 .item-text {
@@ -170,8 +169,6 @@ p {
   padding-top: 1rem;
   color: var(--color-primary);
 }
-
-
 
 @media screen and (min-width: 768px) {
   .menu-item {
@@ -181,5 +178,14 @@ p {
   .photo {
     width: auto;
     height: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .price {
+    display: block; /* Ustawiamy element na blokowy, aby wersja mobilna nie miała efektu "inline" */
+    
+    text-overflow: ellipsis; /* Dodajemy "..." w przypadku, gdy tekst nie mieści się w jednej linii */
+    white-space: nowrap; /* Dla pewności, że tekst zostanie w jednej linii */
+    max-width: 100%; /* Ustawiamy maksymalną szerokość na 100% w przypadku tekstów bardzo długich */
   }
 }
