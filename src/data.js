@@ -113,7 +113,7 @@ const menu = [
   },
   {
     id: 16,
-    title: "SMOKED",
+    title: "AFFUMICATA",
     category: "pizza",
     price: 39,
     ingredients:
