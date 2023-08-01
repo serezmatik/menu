@@ -137,14 +137,14 @@ const menu = [
   },
   {
     id: 25,
-    title: "SHRIMPS ON TOAST",
+    title: "SHRIMP ON TOAST - 1 piece",
     category: "Starters",
     price: 10,
     ingredients: "bread | shrimps | garlic | butter",
   },
   {
     id: 26,
-    title: "SALMON PANCAKES",
+    title: "SALMON PANCAKE - 1 piece",
     category: "Starters",
     price: 12,
     ingredients: "smoked salmon | potato pancakes | cream cheese",
