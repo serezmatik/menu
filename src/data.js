@@ -260,11 +260,11 @@ const menu = [
   },
   {
     id: 41,
-    title: "WITH BEEF TENDERLOIN AND POMEGRANATE",
+    title: "PRIMAVERA",
     category: "Salads",
     price: 37,
     ingredients:
-      "slices of marinated beef tenderloin | mixed greens | cherry tomatoes | pumpkin seeds | pomegranate seeds | lemon vinaigrette",
+      "burrata cheese | beef ham Bresaola | mixed greens | cherry tomatoes | pumpkin seeds | pomegranate seeds | lemon vinaigrette",
   },
   {
     id: 42,
