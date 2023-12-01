@@ -57,14 +57,6 @@ const menu = [
       "tomato sauce | mozzarella | aged ham | arugula | grana padano cheese | cherry tomatoes",
   },
   {
-    id: 9,
-    title: "CELTIC",
-    category: "pizza",
-    price: 38,
-    ingredients:
-      "tomato sauce | mozzarella | cooked ham | mild salami | mushrooms",
-  },
-  {
     id: 10,
     title: "THE BEST",
     category: "pizza",
