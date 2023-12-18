@@ -113,13 +113,6 @@ const menu = [
       ingredients: "peeled tomatoes | mozzarella fior di latte | burrata | Bresaola beef | arugula | Grana Padano cheese | cherry tomatoes",
     },
   {
-    id: 25,
-    title: "SHRIMP ON TOAST - 1 piece",
-    category: "Starters",
-    price: 10,
-    ingredients: "bread | shrimps | garlic | butter",
-  },
-  {
     id: 26,
     title: "SALMON PANCAKE - 1 piece",
     category: "Starters",
