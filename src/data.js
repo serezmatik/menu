@@ -148,11 +148,11 @@ const menu = [
   },
   {
     id: 21,
-    title: "BEEF TENDERLOIN STEAK",
+    title: "BEEF TENDERLOIN  ON A HOT PLATE",
     category: "Main Courses",
     price: 46,
     ingredients:
-      "on a hot plate | tomatoes | bread | rosemary and pepper olive oil",
+      "tomatoes | bread | rosemary and pepper olive oil",
   },
   {
     id: 22,
@@ -409,7 +409,7 @@ const menu = [
     title: "MOJITO",
     category: "drinks",
     price: 27,
-    ingredients: "white rum | lime | mint syrup | brown sugar | crushed ice",
+    ingredients: "white rum | lime | mint | brown sugar | crushed ice",
   },
   {
     id: 70,
@@ -444,14 +444,14 @@ const menu = [
     title: "STONEHENGE COLLINS",
     category: "drinks",
     price: 29,
-    ingredients: "gin | mint liqueur | lemon juice | crushed ice | tonic",
+    ingredients: "gin | mint | lemon juice | crushed ice | tonic",
   },
   {
     id: 75,
     title: "VIRGIN MOJITO",
     category: "non-alcoholic drinks",
     price: 23,
-    ingredients: "lime | mint syrup | brown sugar | soda water",
+    ingredients: "lime | mint | brown sugar | soda water",
   },
   {
     id: 76,
