@@ -54,7 +54,7 @@ const menu = [
       title: "PARMA",
       category: "pizza rossa",
       price: 38,
-      ingredients: "peeled tomatoes | mozzarella fior di latte |  prosciutto crudo | arugula | Parmigiano Reggiano | cherry tomatoes",
+      ingredients: "peeled tomatoes | mozzarella fior di latte |  prosciutto crudo | arugula | parmigiano reggiano | cherry tomatoes",
     },
     {
       id: 9,
@@ -103,29 +103,23 @@ const menu = [
       title: "QUATTRO FORMAGGI",
       category: "pizza bianco",
       price: 38,
-      ingredients: "mozzarella fior di latte | gorgonzola | Parmigiano Reggiano | feta",
+      ingredients: "mozzarella fior di latte | gorgonzola | parmigiano reggiano | feta",
     },
     {
       id: 16,
       title: "PRIMAVERA",
       category: "pizza bianco",
       price: 47,
-      ingredients: "peeled tomatoes | mozzarella fior di latte | burrata | Bresaola beef | arugula | Grana Padano cheese | cherry tomatoes",
+      ingredients: "peeled tomatoes | mozzarella fior di latte | burrata | Bresaola beef | arugula | parmigiano reggiano | cherry tomatoes",
     },
   {
     id: 26,
-    title: "SALMON PANCAKE - 1 piece",
+    title: "POTATO PANCAKE WITH PARMA HAM - 1 piece",
     category: "Starters",
     price: 12,
-    ingredients: "smoked salmon | potato pancakes | cream cheese",
+    ingredients: "parma ham | potato pancake | plain yogurt",
   },
-  {
-    id: 27,
-    title: "BEEF TENDERLOIN CARPACCIO",
-    category: "Starters",
-    price: 38,
-    ingredients: "beef tenderloin | arugula | capers | grana padano cheese",
-  },
+  
   {
     id: 28,
     title: "FRESH TOMATO SOUP",
@@ -186,7 +180,7 @@ const menu = [
     category: "Salads",
     price: 31,
     ingredients:
-      "parma ham | mozzarella cheese | tomato | olives | capers | grana padano cheese | red onion | basil pesto",
+      "parma ham | mozzarella cheese | tomato | olives | capers | parmigiano reggiano | red onion | basil pesto",
   },
   {
     id: 36,
@@ -210,7 +204,7 @@ const menu = [
     category: "Salads",
     price: 33,
     ingredients:
-      "grilled chicken and bacon | romaine lettuce | grana padano cheese | poached egg | Caesar dressing",
+      "grilled chicken and bacon | romaine lettuce | parmigiano reggiano | poached egg | Caesar dressing",
   },
   {
     id: 39,
@@ -237,19 +231,26 @@ const menu = [
       "burrata cheese | beef ham Bresaola | mixed greens | cherry tomatoes | pumpkin seeds | pomegranate seeds | lemon vinaigrette",
   },
   {
+    id: 41.1,
+    title: "BEEF TENDERLOIN CARPACCIO",
+    category: "Salads",
+    price: 38,
+    ingredients: "beef tenderloin | arugula | capers | parmigiano reggiano",
+  },
+  {
     id: 42,
     title: "SPAGHETTI CARBONARA",
     category: "Pasta",
     price: 34,
     ingredients:
-      "speck | garlic | fresh parsley | grana padano cheese | onion | sauce",
+      "speck | garlic | fresh parsley | parmigiano reggiano | onion | sauce",
   },
   {
     id: 43,
     title: "SPAGHETTI BOLOGNESE",
     category: "Pasta",
     price: 35,
-    ingredients: "bolognese sauce | grana padano cheese",
+    ingredients: "bolognese sauce | parmigiano reggiano",
   },
   {
     id: 44,
@@ -264,7 +265,7 @@ const menu = [
     category: "Pasta",
     price: 36,
     ingredients:
-      "anchovies | onion | sundried tomatoes | grana padano cheese | fresh parsley | garlic",
+      "anchovies | onion | sundried tomatoes | parmigiano reggiano | fresh parsley | garlic",
   },
   {
     id: 46,
@@ -279,20 +280,14 @@ const menu = [
     category: "Pasta",
     price: 36,
     ingredients:
-      "artichokes | pistachios | grana padano cheese | garlic | lemon zest",
+      "artichokes | pistachios | parmigiano reggiano | garlic | lemon zest",
   },
   {
     id: 49,
     title: "PENNE WITH BEEF TENDERLOIN",
     category: "Pasta",
     price: 38,
-    ingredients: "fresh red pepper | sesame | grana padano cheese | onion",
-  },
-  {
-    id: 30,
-    title: "WITH BROCCOLI",
-    category: "risotto",
-    price: 38,
+    ingredients: "fresh red pepper | sesame | parmigiano reggiano | onion",
   },
   {
     id: 31,
