@@ -274,13 +274,6 @@ const menu = [
     ingredients: "tomato sauce | garlic | chives",
   },
   {
-    id: 47,
-    title: "ORECCHIETTE WITH BROCCOLI",
-    category: "Pasta",
-    price: 36,
-    ingredients: "broccoli | pistachios | lemon zest",
-  },
-  {
     id: 48,
     title: "TAGLIATELLE WITH ARTICHOKES",
     category: "Pasta",
