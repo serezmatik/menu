@@ -156,10 +156,10 @@ const menu = [
   },
   {
     id: 22,
-    title: "BEEF GOULASH",
+    title: "gnocchi with beef",
     category: "Main Courses",
     price: 38,
-    ingredients: "potato pancakes | goulash sauce | pieces of beef",
+    ingredients: "beef | tomatoes",
   },
   {
     id: 23,
@@ -311,10 +311,10 @@ const menu = [
   },
   {
     id: 34,
-    title: "PIZZA WITH HAM",
+    title: "gnocchi",
     category: "for kids",
     price: 27,
-    ingredients: "tomato sauce | mozzarella | ham",
+    ingredients: "cream | raspberry sauce",
   },
   {
     id: 50,
