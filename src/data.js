@@ -245,13 +245,7 @@ const menu = [
     ingredients:
       "speck | garlic | fresh parsley | parmigiano reggiano | onion | sauce",
   },
-  {
-    id: 43,
-    title: "SPAGHETTI BOLOGNESE",
-    category: "Pasta",
-    price: 35,
-    ingredients: "bolognese sauce | parmigiano reggiano",
-  },
+  
   {
     id: 44,
     title: "TAGLIATELLE WITH CHICKEN",
