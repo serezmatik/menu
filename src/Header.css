@@ -1,52 +1,66 @@
 /* Header.css */
 .header {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     padding: 2rem;
     background-color: white;
 }
 
 .logo-container {
-    flex: 1;
     display: flex;
     align-items: center;
-    gap: 1rem; /* Dodajemy odstęp między logo a przyciskiem języka */
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 .logo {
-    font-size: 1.5rem; /* Zmniejszamy rozmiar logo na 1.5 rem */
+    font-size: 1.5rem;
     font-weight: bold;
     color: black;
     cursor: pointer;
     text-decoration: none;
-    font-family: monospace; /* Zmieniamy czcionkę na monospace */
+    font-family: monospace;
     transition: transform 0.2s;
 }
 
 .logo:hover {
     transform: scale(1.05);
-    text-decoration: none; /* Usuwamy podkreślenie na hover */
+    text-decoration: none;
 }
 
-.language-btn {
+.location-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-btn {
     font-size: 1rem;
-    padding: 0.8em 1.2em; /* Drobna zmiana w wielkości przycisku */
+    padding: 0.8em 1.2em;
     border-radius: 2.4rem;
     color: black;
     background-color: transparent;
     text-transform: uppercase;
     cursor: pointer;
-    text-decoration: none;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-family: monospace; /* Zmieniamy czcionkę na monospace */
+    font-family: monospace;
     transition: background-color 0.3s;
-    border: 1px solid black; /* Dodajemy obramowanie */
+    border: 1px solid black;
 }
 
-.language-btn:hover {
+.filter-btn:hover {
     background-color: #f0f0f0;
-    text-decoration: none; /* Usuwamy podkreślenie na hover */
+}
+
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo-container {
+        margin-bottom: 0;
+    }
 }

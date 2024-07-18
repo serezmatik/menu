@@ -189,3 +189,27 @@ a{
     max-width: 100%; /* Ustawiamy maksymalną szerokość na 100% w przypadku tekstów bardzo długich */
   }
 }
+
+.location-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  gap: 10px;
+}
+
+.location-buttons .filter-btn {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  border: none;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+  border-radius: 2.4rem;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.location-buttons .filter-btn:hover {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}

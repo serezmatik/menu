@@ -1,17 +1,28 @@
 import React from "react";
 import "./Header.css";
 
-const Header = () => {
+const Header = ({ onLocationChange }) => {
   return (
     <header className="header">
       <div className="logo-container">
-        <a href="https://stonehenge.pl">
-          <span className="logo">STONEHENGE</span>
+        <a href="https://stonehenge.pl" className="logo">
+          STONEHENGE
         </a>
       </div>
-      <a href="https://serezmatik.github.io/menuPL/">
-        <button className="language-btn">PL</button>
-      </a>
+      <div className="location-buttons">
+        <button
+          className="filter-btn"
+          onClick={() => onLocationChange("Sosnowiec")}
+        >
+          Sosnowiec
+        </button>
+        <button
+          className="filter-btn"
+          onClick={() => onLocationChange("Dąbrowa Górnicza")}
+        >
+          Dąbrowa Górnicza
+        </button>
+      </div>
     </header>
   );
 };

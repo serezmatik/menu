@@ -1,125 +1,138 @@
 const menu = [
-  
-    {
-      id: 1,
-      title: "MARGHERITA",
-      category: "pizza rossa",
-      price: 29,
-      ingredients: "peeled tomatoes | mozzarella fior di latte",
-    },
-    {
-      id: 2,
-      title: "COTTO",
-      category: "pizza rossa",
-      price: 34,
-      ingredients: "peeled tomatoes | mozzarella fior di latte | prosciutto cotto",
-    },
-    {
-      id: 3,
-      title: "SALAME",
-      category: "pizza rossa",
-      price: 34,
-      ingredients: "peeled tomatoes | mozzarella fior di latte | Napoli salami or spianata picante",
-    },
-    {
-      id: 4,
-      title: "POLLO",
-      category: "pizza rossa",
-      price: 36,
-      ingredients: "peeled tomatoes | mozzarella fior di latte | chicken breast | red onion",
-    },
-    {
-      id: 5,
-      title: "SPINACI",
-      category: "pizza rossa",
-      price: 36,
-      ingredients: "peeled tomatoes | mozzarella fior di latte | spinach | garlic | gorgonzola | egg yolk",
-    },
-    {
-      id: 6,
-      title: "ITALIAN",
-      category: "pizza rossa",
-      price: 36,
-      ingredients: "peeled tomatoes | mozzarella fior di latte | sun-dried tomatoes | gorgonzola",
-    },
-    {
-      id: 7,
-      title: "CAPRICCIOSA",
-      category: "pizza rossa",
-      price: 38,
-      ingredients: "peeled tomatoes | mozzarella fior di latte |  prosciutto cotto | mushrooms | artichokes",
-    },
-    {
-      id: 8,
-      title: "PARMA",
-      category: "pizza rossa",
-      price: 38,
-      ingredients: "peeled tomatoes | mozzarella fior di latte |  prosciutto crudo | arugula | parmigiano reggiano | cherry tomatoes",
-    },
-    {
-      id: 9,
-      title: "GAMBERI",
-      category: "pizza rossa",
-      price: 38,
-      ingredients: "peeled tomatoes | mozzarella fior di latte | shrimp | garlic | arugula | lemon zest",
-    },
-    {
-      id: 10,
-      title: "TONNO",
-      category: "pizza rossa",
-      price: 38,
-      ingredients: "peeled tomatoes | mozzarella fior di latte | tuna | anchovies | red onion",
-    },
-    {
-      id: 11,
-      title: "DIAVOLO",
-      category: "pizza rossa",
-      price: 39,
-      ingredients: "peeled tomatoes | mozzarella fior di latte | spianata picante | olives | jalapeno",
-    },
-    {
-      id: 12,
-      title: "FOCACCIA",
-      category: "pizza bianco",
-      price: 21,
-      ingredients: "olive oil | rosemary ",
-    },
-    {
-      id: 13,
-      title: "MAMMA MIA",
-      category: "pizza bianco",
-      price: 34,
-      ingredients: "mascarpone | mozzarella fior di latte | pine nuts | pear | honey",
-    },
-    {
-      id: 14,
-      title: "TOSCANA",
-      category: "pizza bianco",
-      price: 36,
-      ingredients: "mozzarella fior di latte | mushrooms | arugula | artichokes | cherry tomatoes",
-    },
-    {
-      id: 15,
-      title: "QUATTRO FORMAGGI",
-      category: "pizza bianco",
-      price: 38,
-      ingredients: "mozzarella fior di latte | gorgonzola | parmigiano reggiano | feta",
-    },
-    {
-      id: 16,
-      title: "PRIMAVERA",
-      category: "pizza bianco",
-      price: 47,
-      ingredients: "peeled tomatoes | mozzarella fior di latte | burrata | Bresaola beef | arugula | parmigiano reggiano | cherry tomatoes",
-    },
+  {
+    id: 1,
+    title: "MARGHERITA",
+    category: "pizza rossa",
+    price: 32,
+    ingredients: "peeled tomatoes | mozzarella fior di latte",
+  },
+  {
+    id: 2,
+    title: "COTTO",
+    category: "pizza rossa",
+    price: 37,
+    ingredients:
+      "peeled tomatoes | mozzarella fior di latte | prosciutto cotto",
+  },
+  {
+    id: 3,
+    title: "SALAME",
+    category: "pizza rossa",
+    price: 37,
+    ingredients:
+      "peeled tomatoes | mozzarella fior di latte | Napoli salami or spianata picante",
+  },
+  {
+    id: 4,
+    title: "POLLO",
+    category: "pizza rossa",
+    price: 39,
+    ingredients:
+      "peeled tomatoes | mozzarella fior di latte | chicken breast | red onion",
+  },
+  {
+    id: 5,
+    title: "SPINACI",
+    category: "pizza rossa",
+    price: 39,
+    ingredients:
+      "peeled tomatoes | mozzarella fior di latte | spinach | garlic | gorgonzola | egg yolk",
+  },
+  {
+    id: 6,
+    title: "ITALIAN",
+    category: "pizza rossa",
+    price: 39,
+    ingredients:
+      "peeled tomatoes | mozzarella fior di latte | sun-dried tomatoes | gorgonzola",
+  },
+  {
+    id: 7,
+    title: "CAPRICCIOSA",
+    category: "pizza rossa",
+    price: 41,
+    ingredients:
+      "peeled tomatoes | mozzarella fior di latte |  prosciutto cotto | mushrooms | artichokes",
+  },
+  {
+    id: 8,
+    title: "PARMA",
+    category: "pizza rossa",
+    price: 41,
+    ingredients:
+      "peeled tomatoes | mozzarella fior di latte |  prosciutto crudo | arugula | parmigiano reggiano | cherry tomatoes",
+  },
+  {
+    id: 9,
+    title: "GAMBERI",
+    category: "pizza rossa",
+    price: 41,
+    ingredients:
+      "peeled tomatoes | mozzarella fior di latte | shrimp | garlic | arugula | lemon zest",
+  },
+  {
+    id: 10,
+    title: "TONNO",
+    category: "pizza rossa",
+    price: 41,
+    ingredients:
+      "peeled tomatoes | mozzarella fior di latte | tuna | anchovies | red onion",
+  },
+  {
+    id: 11,
+    title: "DIAVOLO",
+    category: "pizza rossa",
+    price: 42,
+    ingredients:
+      "peeled tomatoes | mozzarella fior di latte | spianata picante | olives | jalapeno",
+  },
+  {
+    id: 12,
+    title: "FOCACCIA",
+    category: "pizza bianco",
+    price: 24,
+    ingredients: "olive oil | rosemary ",
+  },
+  {
+    id: 13,
+    title: "MAMMA MIA",
+    category: "pizza bianco",
+    price: 37,
+    ingredients:
+      "mascarpone | mozzarella fior di latte | pine nuts | pear | honey",
+  },
+  {
+    id: 14,
+    title: "TOSCANA",
+    category: "pizza bianco",
+    price: 39,
+    ingredients:
+      "mozzarella fior di latte | mushrooms | arugula | artichokes | cherry tomatoes",
+  },
+  {
+    id: 15,
+    title: "QUATTRO FORMAGGI",
+    category: "pizza bianco",
+    price: 41,
+    ingredients:
+      "mozzarella fior di latte | gorgonzola | parmigiano reggiano | feta",
+  },
+  {
+    id: 16,
+    title: "PRIMAVERA",
+    category: "pizza bianco",
+    price: 49,
+    ingredients:
+      "peeled tomatoes | mozzarella fior di latte | burrata | Bresaola beef | arugula | parmigiano reggiano | cherry tomatoes",
+  },
   {
     id: 26,
-    title: "POTATO PANCAKE WITH PARMA HAM - 1 piece",
+    title: "SHRIMPS WITH FOCACCIA",
     category: "Starters",
-    price: 12,
-    ingredients: "parma ham | potato pancake | plain yogurt",
+    price: 22,
+    ingredients: "3 - pieces",
   },
-  
+
   {
     id: 28,
     title: "FRESH TOMATO SOUP",
@@ -131,49 +144,24 @@ const menu = [
     title: "CHICKEN BROTH WITH NOODLES",
     category: "Soups",
     price: 16,
+    ingredients: "AVAILABLE ONLY ON SUNDAY",
   },
   {
     id: 19,
-    title: "PARMESAN CHICKEN",
+    title: "PARMESAN CHICKEN - AVAILABLE ONLY ON SUNDAY",
     category: "Main Courses",
     price: 38,
     ingredients: "fries | salad | horseradish dressing",
   },
-  {
-    id: 20,
-    title: "MILANESE PORK LOIN",
-    category: "Main Courses",
-    price: 41,
-    ingredients: "tagliatelle pasta | grilled tomatoes | with spinach",
-  },
+
   {
     id: 21,
     title: "BEEF TENDERLOIN  ON A HOT PLATE",
     category: "Main Courses",
     price: 46,
-    ingredients:
-      "tomatoes | bread | rosemary and pepper olive oil",
+    ingredients: "tomatoes | bread | rosemary and pepper olive oil",
   },
-  {
-    id: 22,
-    title: "gnocchi with beef",
-    category: "Main Courses",
-    price: 38,
-    ingredients: "beef | tomatoes",
-  },
-  {
-    id: 23,
-    title: "POTATO PANCAKE - 1 PC.",
-    category: "Main Courses",
-    price: 10,
-    ingredients: "sour cream | sugar",
-  },
-  {
-    id: 24,
-    title: "BEEF TENDERLOIN STEAK",
-    category: "Main Courses",
-    price: 85,
-  },
+
   {
     id: 35,
     title: "CAPRESE",
@@ -242,10 +230,9 @@ const menu = [
     title: "SPAGHETTI CARBONARA",
     category: "Pasta",
     price: 34,
-    ingredients:
-      "speck | garlic | fresh parsley | parmigiano reggiano | onion | sauce",
+    ingredients: "speck | garlic | fresh parsley | parmigiano reggiano ",
   },
-  
+
   {
     id: 44,
     title: "TAGLIATELLE WITH CHICKEN",
@@ -253,14 +240,7 @@ const menu = [
     price: 35,
     ingredients: "cream sauce | gorgonzola",
   },
-  {
-    id: 45,
-    title: "SPAGHETTI SICILIAN",
-    category: "Pasta",
-    price: 36,
-    ingredients:
-      "anchovies | onion | sundried tomatoes | parmigiano reggiano | fresh parsley | garlic",
-  },
+
   {
     id: 46,
     title: "FARFALLE WITH SHRIMPS",
@@ -268,41 +248,7 @@ const menu = [
     price: 36,
     ingredients: "tomato sauce | garlic | chives",
   },
-  {
-    id: 48,
-    title: "TAGLIATELLE WITH ARTICHOKES",
-    category: "Pasta",
-    price: 36,
-    ingredients:
-      "artichokes | pistachios | parmigiano reggiano | garlic | lemon zest",
-  },
-  {
-    id: 49,
-    title: "PENNE WITH BEEF TENDERLOIN",
-    category: "Pasta",
-    price: 38,
-    ingredients: "fresh red pepper | sesame | parmigiano reggiano | onion",
-  },
-  {
-    id: 31,
-    title: "WITH CHICKEN",
-    category: "risotto",
-    price: 38,
-    ingredients: "with chicken and green peas",
-  },
-  {
-    id: 32,
-    title: "WITH PRAWNS AND LEEK",
-    category: "risotto",
-    price: 38,
-  },
-  {
-    id: 33,
-    title: "POULTRY TENDERLOINS",
-    category: "for kids",
-    price: 27,
-    ingredients: "cornflake coating | fries | carrot with apple",
-  },
+
   {
     id: 34,
     title: "gnocchi",
@@ -310,6 +256,13 @@ const menu = [
     price: 27,
     ingredients: "cream | raspberry sauce",
   },
+  {
+    id: 135,
+    title: "TIRAMISU",
+    category: "Dessert",
+    price: 19,
+  },
+
   {
     id: 50,
     title: "LEAF TEA",
@@ -363,13 +316,13 @@ const menu = [
     id: 63,
     title: "SPARKLING / STILL WATER CARAFE 0.5 L",
     category: "cold drinks",
-    price: 9,
+    price: 10,
   },
   {
     id: 64,
     title: "SPARKLING / STILL WATER CARAFE 1 L",
     category: "cold drinks",
-    price: 13,
+    price: 15,
   },
   {
     id: 65,
@@ -386,7 +339,7 @@ const menu = [
   },
   {
     id: 67,
-    title: "ON LEMON 0.33 L",
+    title: "Coca-Cola 0.25 L",
     category: "cold drinks",
     price: 11,
   },
@@ -472,29 +425,29 @@ const menu = [
     id: 81,
     title: "ZWIERZYNIEC PILS",
     category: "beers",
-    price: 13,
-    ingredients: "10.50 zł (0,3 l) / 13 zł (0,5 l)",
+    price: 15,
+    ingredients: "12 zł (0,3 l) / 15 zł (0,5 l)",
   },
   {
     id: 82,
     title: "ZWIERZYNIEC WITBIER",
     category: "beers",
-    price: 13,
-    ingredients: "10.50 zł (0,3 l) / 13 zł (0,5 l)",
+    price: 15,
+    ingredients: "12 zł (0,3 l) / 15 zł (0,5 l)",
   },
   {
     id: 82.5,
     title: "NON-ALCOHOLIC BEER",
     category: "beers",
-    price: "13",
+    price: "15",
     ingredients: "0,5 l",
   },
   {
     id: 83,
     title: "HOMEMADE SEMI-DRY",
     category: "wines",
-    price: "11/16",
-    ingredients: "red or white 100ml/250ml",
+    price: "17/32",
+    ingredients: "red or white 250ml/500ml",
   },
   {
     id: 84,
@@ -612,6 +565,7 @@ const menu = [
     id: 102,
     title: "Rum",
     category: "alcoholic drinks",
+    price: "15",
   },
   {
     id: 111,
