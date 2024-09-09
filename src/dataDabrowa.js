@@ -146,13 +146,6 @@ const menu = [
     price: 16,
     ingredients: "AVAILABLE ONLY ON SUNDAY",
   },
-  {
-    id: 19,
-    title: "PARMESAN CHICKEN - AVAILABLE ONLY ON SUNDAY",
-    category: "Main Courses",
-    price: 38,
-    ingredients: "fries | salad | horseradish dressing",
-  },
 
   {
     id: 21,
