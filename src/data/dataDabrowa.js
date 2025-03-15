@@ -1,16 +1,17 @@
 const menu = [
+
   {
     id: 1,
     title: "MARGHERITA",
     category: "pizza rossa",
-    price: 32,
+    price: 36,
     ingredients: "peeled tomatoes | mozzarella fior di latte",
   },
   {
     id: 2,
     title: "COTTO",
     category: "pizza rossa",
-    price: 37,
+    price: 39,
     ingredients:
       "peeled tomatoes | mozzarella fior di latte | prosciutto cotto",
   },
@@ -18,7 +19,7 @@ const menu = [
     id: 3,
     title: "SALAME",
     category: "pizza rossa",
-    price: 37,
+    price: 39,
     ingredients:
       "peeled tomatoes | mozzarella fior di latte | Napoli salami or spianata picante",
   },
@@ -26,7 +27,7 @@ const menu = [
     id: 4,
     title: "POLLO",
     category: "pizza rossa",
-    price: 39,
+    price: 41,
     ingredients:
       "peeled tomatoes | mozzarella fior di latte | chicken breast | red onion",
   },
@@ -34,7 +35,7 @@ const menu = [
     id: 5,
     title: "SPINACI",
     category: "pizza rossa",
-    price: 39,
+    price: 41,
     ingredients:
       "peeled tomatoes | mozzarella fior di latte | spinach | garlic | gorgonzola | egg yolk",
   },
@@ -42,7 +43,7 @@ const menu = [
     id: 6,
     title: "ITALIAN",
     category: "pizza rossa",
-    price: 39,
+    price: 41,
     ingredients:
       "peeled tomatoes | mozzarella fior di latte | sun-dried tomatoes | gorgonzola",
   },
@@ -50,23 +51,23 @@ const menu = [
     id: 7,
     title: "CAPRICCIOSA",
     category: "pizza rossa",
-    price: 41,
+    price: 43,
     ingredients:
-      "peeled tomatoes | mozzarella fior di latte |  prosciutto cotto | mushrooms | artichokes",
+      "peeled tomatoes | mozzarella fior di latte | prosciutto cotto | mushrooms | artichokes",
   },
   {
     id: 8,
     title: "PARMA",
     category: "pizza rossa",
-    price: 41,
+    price: 43,
     ingredients:
-      "peeled tomatoes | mozzarella fior di latte |  prosciutto crudo | arugula | parmigiano reggiano | cherry tomatoes",
+      "peeled tomatoes | mozzarella fior di latte | prosciutto crudo | arugula | parmigiano reggiano | cherry tomatoes",
   },
   {
     id: 9,
     title: "GAMBERI",
     category: "pizza rossa",
-    price: 41,
+    price: 43,
     ingredients:
       "peeled tomatoes | mozzarella fior di latte | shrimp | garlic | arugula | lemon zest",
   },
@@ -74,7 +75,7 @@ const menu = [
     id: 10,
     title: "TONNO",
     category: "pizza rossa",
-    price: 41,
+    price: 43,
     ingredients:
       "peeled tomatoes | mozzarella fior di latte | tuna | anchovies | red onion",
   },
@@ -84,14 +85,14 @@ const menu = [
     category: "pizza rossa",
     price: 42,
     ingredients:
-      "peeled tomatoes | mozzarella fior di latte | spianata picante | olives | jalapeno",
+      "peeled tomatoes | mozzarella fior di latte | spianata picante | olives with seeds | jalapeno",
   },
   {
     id: 12,
     title: "FOCACCIA",
     category: "pizza bianco",
-    price: 24,
-    ingredients: "olive oil | rosemary ",
+    price: 26,
+    ingredients: "extra virgin olive oil | rosemary | salt",
   },
   {
     id: 13,
@@ -105,7 +106,7 @@ const menu = [
     id: 14,
     title: "TOSCANA",
     category: "pizza bianco",
-    price: 39,
+    price: 41,
     ingredients:
       "mozzarella fior di latte | mushrooms | arugula | artichokes | cherry tomatoes",
   },
@@ -113,7 +114,7 @@ const menu = [
     id: 15,
     title: "QUATTRO FORMAGGI",
     category: "pizza bianco",
-    price: 41,
+    price: 43,
     ingredients:
       "mozzarella fior di latte | gorgonzola | parmigiano reggiano | feta",
   },
@@ -121,40 +122,80 @@ const menu = [
     id: 16,
     title: "PRIMAVERA",
     category: "pizza bianco",
-    price: 49,
+    price: 51,
     ingredients:
-      "peeled tomatoes | mozzarella fior di latte | burrata | Bresaola beef | arugula | parmigiano reggiano | cherry tomatoes",
+      "mozzarella fior di latte | burrata | beef ham | arugula | parmigiano reggiano | cherry tomatoes",
   },
   {
     id: 26,
     title: "SHRIMPS WITH FOCACCIA",
     category: "Starters",
     price: 22,
-    ingredients: "3 - pieces",
+    ingredients: "3 pieces",
   },
-
+  {
+    id: 27,
+    title: "FRENCH FRIES",
+    category: "Starters",
+    price: 14,
+  },
   {
     id: 28,
-    title: "FRESH TOMATO SOUP",
+    title: "ITALIAN TOMATO CREAM SOUP",
     category: "Soups",
     price: 16,
+    ingredients: "peeled tomatoes",
   },
+  
   {
-    id: 29,
-    title: "CHICKEN BROTH WITH NOODLES",
-    category: "Soups",
-    price: 16,
-    ingredients: "AVAILABLE ONLY ON SUNDAY",
+    id: 20,
+    title: "CHICKEN IN PARMESAN",
+    category: "Main Courses",
+    price: 38,
+    ingredients: "gnocchi with pesto | Italian cucumber salad",
   },
-
   {
     id: 21,
-    title: "BEEF TENDERLOIN  ON A HOT PLATE",
+    title: "BEEF TENDERLOIN ON A HOT PLATE",
     category: "Main Courses",
     price: 46,
-    ingredients: "tomatoes | bread | rosemary and pepper olive oil",
+    ingredients: "cherry tomatoes | rosemary and pepper olive oil | bread",
   },
-
+  {
+    id: 42,
+    title: "SPAGHETTI CARBONARA",
+    category: "Pasta",
+    price: 34,
+    ingredients: "guanciale | parmigiano reggiano | egg yolk | garlic | fresh parsley",
+  },
+  {
+    id: 43,
+    title: "PENNE ALL'ARRABBIATA",
+    category: "Pasta",
+    price: 34,
+    ingredients: "tomato sauce | jalapeno peppers | garlic",
+  },
+  {
+    id: 44,
+    title: "TAGLIATELLE WITH CHICKEN",
+    category: "Pasta",
+    price: 35,
+    ingredients: "cream sauce | gorgonzola",
+  },
+  {
+    id: 45,
+    title: "LASAGNE",
+    category: "Pasta",
+    price: 35,
+    ingredients: "beef and pork ragout | peeled tomatoes | bechamel sauce",
+  },
+  {
+    id: 46,
+    title: "FARFALLE WITH SHRIMPS",
+    category: "Pasta",
+    price: 36,
+    ingredients: "olives | capers | cherry tomatoes | garlic | basil",
+  },
   {
     id: 35,
     title: "CAPRESE",
@@ -177,7 +218,7 @@ const menu = [
     category: "Salads",
     price: 31,
     ingredients:
-      "arugula lettuce | baby spinach | beetroot | sheep cheese | walnuts | honey vinaigrette",
+      "arugula lettuce | baby spinach | beetroot | sheep cheese | walnuts | raspberry vinaigrette",
   },
   {
     id: 38,
@@ -185,7 +226,7 @@ const menu = [
     category: "Salads",
     price: 33,
     ingredients:
-      "grilled chicken and bacon | romaine lettuce | parmigiano reggiano | poached egg | Caesar dressing",
+      "grilled chicken and bacon | romaine lettuce | grana padano cheese | poached egg | Caesar dressing",
   },
   {
     id: 39,
@@ -219,32 +260,8 @@ const menu = [
     ingredients: "beef tenderloin | arugula | capers | parmigiano reggiano",
   },
   {
-    id: 42,
-    title: "SPAGHETTI CARBONARA",
-    category: "Pasta",
-    price: 34,
-    ingredients: "speck | garlic | fresh parsley | parmigiano reggiano ",
-  },
-
-  {
-    id: 44,
-    title: "TAGLIATELLE WITH CHICKEN",
-    category: "Pasta",
-    price: 35,
-    ingredients: "cream sauce | gorgonzola",
-  },
-
-  {
-    id: 46,
-    title: "FARFALLE WITH SHRIMPS",
-    category: "Pasta",
-    price: 36,
-    ingredients: "tomato sauce | garlic | chives",
-  },
-
-  {
     id: 34,
-    title: "gnocchi",
+    title: "GNOCCHI",
     category: "for kids",
     price: 27,
     ingredients: "cream | raspberry sauce",
@@ -255,7 +272,6 @@ const menu = [
     category: "Dessert",
     price: 19,
   },
-
   {
     id: 50,
     title: "LEAF TEA",
@@ -294,12 +310,6 @@ const menu = [
     price: 13,
   },
   {
-    id: 56,
-    title: "ICED COFFEE",
-    category: "hot drinks",
-    price: 17,
-  },
-  {
     id: 57,
     title: "HOT CHOCOLATE",
     category: "hot drinks",
@@ -319,24 +329,23 @@ const menu = [
   },
   {
     id: 65,
-    title: "APPLE / ORANGE JUICE",
+    title: "APPLE / ORANGE JUICE 0.3 L",
     category: "cold drinks",
     price: 9,
   },
   {
     id: 66,
-    title: "FRESHLY SQUEEZED JUICE",
+    title: "FRESHLY SQUEEZED JUICE 0.3 L",
     category: "cold drinks",
     price: 15,
     ingredients: "apple | carrot | orange | grapefruit",
   },
   {
     id: 67,
-    title: "Coca-Cola 0.25 L",
+    title: "COLA 0.25 L",
     category: "cold drinks",
-    price: 11,
+    price: 9,
   },
-
   {
     id: 68,
     title: "APEROL SPRITZ",
@@ -384,7 +393,7 @@ const menu = [
     title: "STONEHENGE COLLINS",
     category: "drinks",
     price: 29,
-    ingredients: "gin | mint | lemon juice | crushed ice | tonic",
+    ingredients: "gin | lemon juice | tonic | mint | crushed ice",
   },
   {
     id: 75,
@@ -415,25 +424,29 @@ const menu = [
     ingredients: "orange juice | lime juice | blue curacao | tonic",
   },
   {
+    id: 80,
+    title: "PARADIS",
+    category: "drinks",
+    price: 26,
+    ingredients: "apricot brandy | gin | orange juice",
+  },
+  {
     id: 81,
-    title: "ZWIERZYNIEC PILS",
+    title: "PERŁA EXPORT 0.5 L",
     category: "beers",
     price: 15,
-    ingredients: "12 zł (0,3 l) / 15 zł (0,5 l)",
   },
   {
     id: 82,
-    title: "ZWIERZYNIEC WITBIER",
+    title: "ZWIERZYNIEC WITBIER 0.5 L",
     category: "beers",
     price: 15,
-    ingredients: "12 zł (0,3 l) / 15 zł (0,5 l)",
   },
   {
     id: 82.5,
-    title: "NON-ALCOHOLIC BEER",
+    title: "NON-ALCOHOLIC BEER 0.5 L",
     category: "beers",
-    price: "15",
-    ingredients: "0,5 l",
+    price: 15,
   },
   {
     id: 83,
@@ -472,31 +485,25 @@ const menu = [
   },
   {
     id: 88,
-    title: "Vodka",
+    title: "VODKA",
     category: "Baczewski",
     price: "11",
   },
   {
     id: 89,
-    title: "Cherry Liqueur",
+    title: "CHERRY LIQUEUR",
     category: "Baczewski",
     price: "11",
   },
   {
     id: 90,
-    title: "Piolunowka",
+    title: "PIOLUNOWKA",
     category: "Baczewski",
     price: "11",
   },
   {
     id: 91,
-    title: "Apricot Brandy",
-    category: "Baczewski",
-    price: "11",
-  },
-  {
-    id: 92,
-    title: "Walnut Liqueur",
+    title: "APRICOT BRANDY",
     category: "Baczewski",
     price: "11",
   },
@@ -514,19 +521,19 @@ const menu = [
   },
   {
     id: 95,
-    title: "Suweren Vodka",
+    title: "SUWEREN VODKA",
     category: "alcoholic drinks",
     price: "15",
   },
   {
     id: 96,
-    title: "Ovovit Liqueur",
+    title: "OVOVIT LIQUEUR",
     category: "alcoholic drinks",
     price: "11",
   },
   {
     id: 97,
-    title: "JACK DANIEL'S Whiskey",
+    title: "JACK DANIEL'S WHISKEY",
     category: "alcoholic drinks",
     price: "19",
   },
@@ -544,31 +551,25 @@ const menu = [
   },
   {
     id: 100,
-    title: "JAMESON Whiskey",
+    title: "JAMESON WHISKEY",
     category: "alcoholic drinks",
     price: "16",
   },
   {
-    id: 101,
-    title: "MARTEL VSOP Cognac",
-    category: "alcoholic drinks",
-    price: "27",
-  },
-  {
     id: 102,
-    title: "Rum",
+    title: "RUM",
     category: "alcoholic drinks",
     price: "15",
   },
   {
     id: 111,
-    title: "Mulled Beer",
+    title: "MULLED BEER 0.5 L",
     category: "seasonal",
     price: "21",
   },
   {
     id: 112,
-    title: "Mulled Wine",
+    title: "MULLED WINE 0.2 L",
     category: "seasonal",
     price: "20",
   },

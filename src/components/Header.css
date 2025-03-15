@@ -1,0 +1,189 @@
+/* Header.css */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: monospace;
+    transition: transform 0.2s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.location-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-btn {
+    font-size: 1rem;
+    padding: 0.8em 1.2em;
+    border-radius: 2.4rem;
+    color: black;
+    background-color: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: monospace;
+    transition: background-color 0.3s;
+    border: 1px solid black;
+}
+
+.filter-btn:hover {
+    background-color: #f0f0f0;
+}
+
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo-container {
+        margin-bottom: 0;
+    }
+}
+
+.restaurant-header {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: var(--card-bg);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.restaurant-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.logo-container {
+  margin-bottom: 2rem;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 3px;
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: translateY(-2px);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-description {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin: 1rem 0;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.welcome-message {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--card-bg);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.welcome-message .title {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.welcome-message .subtitle {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  opacity: 0.8;
+  font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+  .restaurant-header {
+    padding: 2rem 1rem;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .restaurant-description {
+    font-size: 1rem;
+  }
+
+  .welcome-message {
+    padding: 3rem 1.5rem;
+  }
+
+  .welcome-message .title {
+    font-size: 2rem;
+  }
+
+  .welcome-message .subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .restaurant-header {
+    padding: 1.5rem 1rem;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .restaurant-description {
+    font-size: 0.9rem;
+  }
+
+  .welcome-message {
+    padding: 2rem 1rem;
+  }
+
+  .welcome-message .title {
+    font-size: 1.75rem;
+  }
+
+  .welcome-message .subtitle {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,48 @@
+.header {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.order-info {
+  margin-bottom: 20px;
+}
+
+.order-info p {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.opening-hours {
+  margin-bottom: 20px;
+}
+
+.opening-hours h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.opening-hours p {
+  margin: 5px 0;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.allergens-info {
+  font-style: italic;
+  color: #666;
+} 

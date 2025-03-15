@@ -1,3 +1,90 @@
+# Stonehenge Menu
+
+Interaktywne menu restauracji Stonehenge z obsługą wielu języków i lokalizacji.
+
+## Funkcje
+
+- 🌐 Wielojęzyczność (Polski/Angielski)
+- 📍 Obsługa wielu lokalizacji
+- 🎨 Nowoczesny i responsywny interfejs
+- 🏠 Sekcja apartamentów z rezerwacją
+- 🍖 Sekcja włoskich wędlin
+- 📱 Pełna obsługa urządzeń mobilnych
+
+## Technologie
+
+- React
+- Chakra UI
+- Framer Motion
+- i18next
+
+## Wymagania
+
+- Node.js (wersja 14 lub wyższa)
+- npm lub yarn
+
+## Instalacja
+
+1. Sklonuj repozytorium:
+```bash
+git clone https://github.com/twojuser/menu.git
+cd menu
+```
+
+2. Zainstaluj zależności:
+```bash
+npm install
+# lub
+yarn install
+```
+
+3. Uruchom aplikację lokalnie:
+```bash
+npm start
+# lub
+yarn start
+```
+
+## Deploy
+
+Aplikacja jest skonfigurowana do automatycznego deployu na Vercel.
+
+1. Zainstaluj Vercel CLI:
+```bash
+npm i -g vercel
+```
+
+2. Zaloguj się do Vercel:
+```bash
+vercel login
+```
+
+3. Deploy:
+```bash
+vercel
+```
+
+Lub po prostu połącz repozytorium GitHub z projektem na Vercel dla automatycznego deployu.
+
+## Struktura projektu
+
+```
+src/
+  ├── components/     # Komponenty React
+  ├── context/       # Konteksty (język, tłumaczenia)
+  ├── data/         # Dane menu
+  ├── styles/       # Style CSS
+  └── App.js        # Główny komponent aplikacji
+```
+
+## Licencja
+
+MIT
+
+## Autor
+
+Twoje imię/nazwa firmy
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,4 +155,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# menu

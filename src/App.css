@@ -1,76 +1,375 @@
-.App {
-  text-align: center;
+/* Zmienne */
+:root {
+  --primary-color: #2C3E50;
+  --secondary-color: #E74C3C;
+  --accent-color: #F1C40F;
+  --background-color: #F9FAFB;
+  --text-color: #2D3436;
+  --text-light: #636E72;
+  --card-bg: #FFFFFF;
+  --border-color: #E2E8F0;
+  --price-color: #E74C3C;
+  --category-bg: #FFFFFF;
+  --hover-color: #34495E;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --gradient-primary: linear-gradient(135deg, #2C3E50, #3498DB);
+  --gradient-secondary: linear-gradient(135deg, #E74C3C, #F39C12);
 }
 
-.clear {
-  float: left;
-  margin-left: 240px;
-  align-items: center;
+/* Podstawowe style */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.section {
+  padding: 4rem 0;
+  background: var(--background-color);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* Nagłówek restauracji */
+.restaurant-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: var(--gradient-primary);
   color: white;
+  position: relative;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.restaurant-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+  opacity: 0.1;
 }
 
-@keyframes App-logo-spin {
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+  display: inline-block;
+  position: relative;
+}
+
+.restaurant-description {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 1rem auto;
+  font-weight: 400;
+}
+
+/* Przyciski lokalizacji */
+.location-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Kategorie */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0 auto 3rem;
+  padding: 1.5rem;
+  max-width: 1000px;
+  background: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 20px;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.filter-btn {
+  background: transparent;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  position: relative;
+}
+
+.filter-btn::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--gradient-secondary);
+  transition: width 0.3s ease;
+}
+
+.filter-btn:hover::after,
+.filter-btn.active::after {
+  width: 80%;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  color: var(--secondary-color);
+  background: rgba(231, 76, 60, 0.1);
+}
+
+/* Menu Container */
+.menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Sekcje menu */
+.menu-section {
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.category-title {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.category-title::before {
+  content: '';
+  width: 40px;
+  height: 3px;
+  background: var(--gradient-secondary);
+  border-radius: 3px;
+}
+
+/* Grid menu */
+.menu-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Pojedyncza pozycja menu */
+.menu-item {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 16px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: transparent;
+}
+
+.item-header {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.item-title {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.item-price {
+  font-size: 1.25rem;
+  color: var(--price-color);
+  font-weight: 700;
+  background: rgba(231, 76, 60, 0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.item-ingredients {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Animacje */
+@keyframes slideUp {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.form {
-  background: #fff;
-  max-width: 450px;
-  margin: 0 auto;
-  margin-bottom: 4rem;
-  padding: 1rem 2rem;
-  border-radius: 0.25rem;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.form input {
-  background: hsl(210, 36%, 96%);
-  border-color: transparent;
-  border-radius: 0.25rem;
-  padding: 0.25rem 0.5rem;
+.menu-item {
+  animation: slideUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
-.item {
-  background: #fff;
-  display: flex;
-  justify-content: space-between;
-  max-width: 450px;
+.menu-section {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* Welcome Message */
+.welcome-message {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--card-bg);
+  border-radius: 24px;
+  box-shadow: var(--shadow-lg);
+  max-width: 800px;
   margin: 2rem auto;
-  align-items: center;
-  border-radius: 0.25rem;
+  position: relative;
+  overflow: hidden;
 }
-.item {
-  padding: 1rem 2rem;
+
+.welcome-message::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-secondary);
 }
-.item h4 {
-  margin-bottom: 0;
+
+.welcome-message .title {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.welcome-message .subtitle {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Responsywność */
+@media screen and (max-width: 992px) {
+  .menu-container {
+    padding: 0 1rem;
+  }
+  
+  .category-title {
+    font-size: 1.8rem;
+  }
+  
+  .welcome-message .title {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 3rem 0;
+  }
+  
+  .restaurant-header {
+    padding: 1.5rem;
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+  }
+  
+  .menu-items-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .btn-container {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .filter-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    padding: 2rem 0;
+  }
+  
+  .logo {
+    font-size: 2rem;
+  }
+  
+  .category-title {
+    font-size: 1.6rem;
+  }
+  
+  .item-title,
+  .item-price {
+    font-size: 1.1rem;
+  }
+  
+  .welcome-message {
+    padding: 2rem 1.5rem;
+  }
+  
+  .welcome-message .title {
+    font-size: 1.8rem;
+  }
+  
+  .welcome-message .subtitle {
+    font-size: 1rem;
+  }
 }
